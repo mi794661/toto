@@ -1,0 +1,1 @@
+../../../LJAutoScrollView/LJAutoScrollView/LJAutoScrollCell.h

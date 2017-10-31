@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="idtCSInputSendView" id="LCn-WI-dld" customClass="CSInputSendView" customModule="Delicious" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8nU-Ax-mfl">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="UWk-vf-wPq"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i3D-06-xCD">
+                    <rect key="frame" x="0.0" y="48" width="600" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Y2t-OE-Vae"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vCm-aN-wDJ">
+                    <rect key="frame" x="15" y="7" width="502" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-00-oE3">
+                    <rect key="frame" x="533" y="7" width="50" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Sii-Te-E01"/>
+                    </constraints>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" red="0.94117647058823528" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vCm-aN-wDJ" firstAttribute="leading" secondItem="LCn-WI-dld" secondAttribute="leading" constant="15" id="0pV-su-tmC"/>
+                <constraint firstAttribute="trailing" secondItem="8nU-Ax-mfl" secondAttribute="trailing" id="7zE-ON-4fo"/>
+                <constraint firstAttribute="bottom" secondItem="vCm-aN-wDJ" secondAttribute="bottom" constant="7" id="8cj-ky-WJH"/>
+                <constraint firstItem="i3D-06-xCD" firstAttribute="leading" secondItem="LCn-WI-dld" secondAttribute="leading" id="BfM-Rx-5mB"/>
+                <constraint firstItem="Byb-00-oE3" firstAttribute="leading" secondItem="vCm-aN-wDJ" secondAttribute="trailing" constant="16" id="Ih2-bR-CQL"/>
+                <constraint firstItem="vCm-aN-wDJ" firstAttribute="top" secondItem="LCn-WI-dld" secondAttribute="top" constant="7" id="V8r-nS-g21"/>
+                <constraint firstAttribute="trailing" secondItem="i3D-06-xCD" secondAttribute="trailing" id="Xv3-GF-7ps"/>
+                <constraint firstItem="Byb-00-oE3" firstAttribute="centerY" secondItem="LCn-WI-dld" secondAttribute="centerY" id="a9s-xM-7mE"/>
+                <constraint firstAttribute="bottom" secondItem="i3D-06-xCD" secondAttribute="bottom" id="b16-uj-RUQ"/>
+                <constraint firstItem="8nU-Ax-mfl" firstAttribute="leading" secondItem="LCn-WI-dld" secondAttribute="leading" id="fJw-Cp-NhH"/>
+                <constraint firstItem="8nU-Ax-mfl" firstAttribute="top" secondItem="LCn-WI-dld" secondAttribute="top" id="iOX-es-cKZ"/>
+                <constraint firstAttribute="trailing" secondItem="Byb-00-oE3" secondAttribute="trailing" constant="17" id="lC0-Km-UZV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttomLineView" destination="i3D-06-xCD" id="hRS-R4-Qis"/>
+                <outlet property="buttomLineViewConns" destination="Y2t-OE-Vae" id="Uw8-WZ-b3V"/>
+                <outlet property="textInputView" destination="vCm-aN-wDJ" id="zLO-Zf-Y9H"/>
+                <outlet property="topLineView" destination="8nU-Ax-mfl" id="EWm-Tb-2Pp"/>
+                <outlet property="topLineViewConns" destination="UWk-vf-wPq" id="etQ-sG-DQk"/>
+                <outlet property="viewCoverButton" destination="Byb-00-oE3" id="YFC-cG-CKr"/>
+            </connections>
+            <point key="canvasLocation" x="527" y="344.5"/>
+        </view>
+    </objects>
+</document>

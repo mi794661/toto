@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBHomeNavView" customModule="NeedIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uep-NY-sTp">
+                    <rect key="frame" x="10" y="2" width="50" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="sMh-iO-uD4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="长沙"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M89-93-Haa">
+                    <rect key="frame" x="60" y="2" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="M89-93-Haa" secondAttribute="height" id="S3g-07-tOY"/>
+                        <constraint firstAttribute="height" constant="40" id="npO-P2-uFa"/>
+                    </constraints>
+                    <state key="normal" image="sy_nav_icon01"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poI-Oi-6xn">
+                    <rect key="frame" x="100" y="0.0" width="314" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d4G-oy-iBw">
+                            <rect key="frame" x="0.0" y="12" width="1" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="Lj8-5T-S0w"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sy_nav_icon02" translatesAutoresizingMaskIntoConstraints="NO" id="wO3-QO-ITU">
+                            <rect key="frame" x="10" y="13" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wO3-QO-ITU" secondAttribute="height" id="R9k-5k-HyP"/>
+                                <constraint firstAttribute="width" constant="18" id="Z9y-dT-gEh"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="云南米线" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzf-yP-LxG" customClass="MarqueeLabel">
+                            <rect key="frame" x="40" y="15" width="48" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="d4G-oy-iBw" secondAttribute="bottom" constant="12" id="1Be-iS-BmE"/>
+                        <constraint firstItem="wO3-QO-ITU" firstAttribute="centerY" secondItem="poI-Oi-6xn" secondAttribute="centerY" id="2tW-Fd-nb7"/>
+                        <constraint firstItem="Jzf-yP-LxG" firstAttribute="centerY" secondItem="poI-Oi-6xn" secondAttribute="centerY" id="45a-L7-e3y"/>
+                        <constraint firstItem="Jzf-yP-LxG" firstAttribute="leading" secondItem="wO3-QO-ITU" secondAttribute="trailing" constant="12" id="BHv-pw-AYZ"/>
+                        <constraint firstItem="d4G-oy-iBw" firstAttribute="leading" secondItem="poI-Oi-6xn" secondAttribute="leading" id="DwP-RX-vFX"/>
+                        <constraint firstItem="wO3-QO-ITU" firstAttribute="leading" secondItem="poI-Oi-6xn" secondAttribute="leading" constant="10" id="JTx-SS-8aG"/>
+                        <constraint firstItem="d4G-oy-iBw" firstAttribute="top" secondItem="poI-Oi-6xn" secondAttribute="top" constant="12" id="Km7-C2-udp"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jzf-yP-LxG" secondAttribute="trailing" constant="10" id="mLX-cJ-lIU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Uep-NY-sTp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7oP-OT-6uZ"/>
+                <constraint firstItem="M89-93-Haa" firstAttribute="leading" secondItem="Uep-NY-sTp" secondAttribute="trailing" id="E1c-tc-hcV"/>
+                <constraint firstItem="M89-93-Haa" firstAttribute="bottom" secondItem="Uep-NY-sTp" secondAttribute="bottom" id="Hul-vn-U8v"/>
+                <constraint firstAttribute="trailing" secondItem="poI-Oi-6xn" secondAttribute="trailing" id="JqK-Pp-OjA"/>
+                <constraint firstItem="poI-Oi-6xn" firstAttribute="leading" secondItem="M89-93-Haa" secondAttribute="trailing" id="QQe-ka-574"/>
+                <constraint firstAttribute="bottom" secondItem="poI-Oi-6xn" secondAttribute="bottom" id="Zal-3x-zyp"/>
+                <constraint firstItem="Uep-NY-sTp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cVn-mB-wDA"/>
+                <constraint firstItem="M89-93-Haa" firstAttribute="top" secondItem="Uep-NY-sTp" secondAttribute="top" id="cfI-uU-jJQ"/>
+                <constraint firstItem="poI-Oi-6xn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dVb-V3-5dM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="locationButton" destination="Uep-NY-sTp" id="fSw-qp-GCP"/>
+                <outlet property="scrollTitleLabel" destination="Jzf-yP-LxG" id="PMP-hF-kRR"/>
+                <outlet property="searchButton" destination="M89-93-Haa" id="iZ1-F3-f3b"/>
+            </connections>
+            <point key="canvasLocation" x="445" y="257"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sy_nav_icon01" width="17" height="17"/>
+        <image name="sy_nav_icon02" width="17" height="17"/>
+    </resources>
+</document>
